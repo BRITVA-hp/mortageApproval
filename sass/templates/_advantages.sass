@@ -1,0 +1,80 @@
+.advantages
+    padding-bottom: 150px
+    background-image: url(../img/advantages/bg.png)
+    background-repeat: no-repeat
+    background-position-x: center
+    background-position-y: calc( 100% + 5px )
+    position: relative
+    &__dots
+        position: absolute
+        width: 63px
+        height: 327px
+        background-image: url(../img/advantages/dots.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        left: 0
+        top: -50px
+    &__container
+        max-width: 1386px
+    &__title
+        margin-bottom: 80px
+        &--2
+            color: #1EBB92
+    &__card
+        width: 390px
+        height: 400px
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            width: 365px
+            height: 400px
+            background: #F1F5FF
+            border-radius: 10px
+            left: 50%
+            top: 0
+            transform: translate(-50%, 12px)
+        &--2
+            &::after
+                background: #B6D1FF
+        &__content
+            width: 100%
+            height: 100%
+            background-color: #FFFFFF
+            border: 1px solid #F1F5FF
+            border-radius: 10px
+            padding: 50px 36px 0
+            &--2
+                background-color: #D7E2FF
+                border: 1px solid #D7E2FF
+        &__title
+            font-family: 'Montserrat', sans-serif
+            font-style: normal
+            font-weight: 800
+            font-size: 22px
+            line-height: 110%
+            text-decoration-line: underline
+            color: #3F578B
+            margin-bottom: 20px
+        &__text
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 120%
+            color: #3F578B
+            padding-right: 15px
+            margin-bottom: 10px
+            &--2
+                color: #162C5B
+        &__ul
+            list-style-type: none
+            font-style: normal
+            font-weight: 600
+            font-size: 18px
+            line-height: 120%
+            color: #3F578B
+            &--2
+                color: #162C5B

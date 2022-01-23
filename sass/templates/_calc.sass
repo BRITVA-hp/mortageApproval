@@ -1,0 +1,203 @@
+.calc
+    padding: 0
+    margin-bottom: 150px
+    &__data
+        margin-bottom: 40px
+    &__result
+        &__button
+            width: 340px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 18px
+            transform: translateY(50%)
+            &:hover
+                transform: scale(1.03) translateY(50%)
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.7)
+            span
+                margin-right: 20px
+        &__button-wrap
+            border-radius: 0 0 10px 10px
+            background-color: transparent
+            width: 100%
+            border: 1px solid #D7E2FF
+            border-top: none
+            display: flex
+            justify-content: center
+        &__row
+            justify-content: center
+        &__box
+            background: #FFFFFF
+            border: 1px solid #D7E2FF
+            border-radius: 10px 10px 0px 0px
+            padding: 40px 20px
+        &__item
+            width: 525px
+            background: #FFFFFF
+            border: 1px solid #D7E2FF
+            border-radius: 10px
+            margin-right: 20px
+            position: relative
+            &:last-of-type
+                margin-right: 0
+            &__title
+                width: 50%
+                font-style: normal
+                font-weight: 600
+                font-size: 18px
+                line-height: 120%
+                padding: 20px 0 20px 34px
+                background-color: #D7E2FF
+                border-radius: 10px 20px 20px 10px
+            &__text
+                width: 50%
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 120%
+                padding: 20px 0 20px 40px
+                &--invalid
+                    position: absolute
+                    color: tomato
+                    font-size: 12px
+                    line-height: 12px
+                    bottom: -15px
+                    left: 0
+        &__title
+            font-family: 'Montserrat', sans-serif
+            font-style: normal
+            font-weight: 800
+            font-size: 30px
+            line-height: 110%
+            color: #1EBB92
+            text-align: center
+            margin-bottom: 40px
+    &__input
+        padding: 20px
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 120%
+        background-color: #FFFFFF
+        border: 1px solid #D7E2FF
+        border-radius: 10px
+        width: 100%
+        &:focus
+            outline: none
+    &__label
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 120%
+        margin-bottom: 10px
+        display: block
+    &__input-group
+        width: 390px
+        &--1
+            margin-right: 20px
+        &--2
+            width: 335px
+    &__select
+        background-color: #FFFFFF
+        border: 1px solid #D7E2FF
+        border-radius: 10px
+        cursor: pointer
+        padding: 20px
+        position: relative
+        transition: 0.3s
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 120%
+        width: 100%
+        &::after
+            content: ''
+            position: absolute
+            width: 16px
+            height: 10px
+            background-image: url(../img/calc/arrow.png)
+            background-repeat: no-repeat
+            background-position: center
+            right: 25px
+            top: 50%
+            transform: translateY(-50%)
+            transition: 0.3s
+        &--active
+            border-radius: 10px 10px 0 0
+            .calc__select__content
+                z-index: 3
+                border: 1px solid #D7E2FF
+                border-top: none
+            &::after
+                transform: translateY(-50%) rotate(180deg)
+        &__content
+            position: absolute
+            width: calc( 100% + 2px )
+            left: -1px
+            top: 100%
+            z-index: -1
+            background-color: #FFFFFF
+            border-radius: 0 0 10px 10px
+            max-height: 0px
+            overflow: auto
+            border: 0px
+            transition: 0.3s
+    &__option
+        padding: 20px
+        transition: 0.3s
+        border-bottom: 1px solid #D7E2FF
+        &:first-of-type
+            border-top: 1px solid #D7E2FF
+        &:last-of-type
+            border-bottom: none
+        &:hover
+            background-color: #D7E2FF
+    &__content
+        background: #F1F5FF
+        border-radius: 10px
+        position: relative
+        padding: 96px 20px 86px
+        &__container
+            max-width: 1210px
+            margin: auto
+    &__title
+        margin-bottom: 20px
+    &__subtitle
+        font-style: normal
+        font-weight: 600
+        font-size: 24px
+        line-height: 100%
+        color: #3F578B
+        text-align: center
+        margin-bottom: 120px
+    &__info
+        background: #FFFFFF
+        border: 1px solid #D7E2FF
+        border-radius: 10px
+        width: 100%
+        max-width: 720px
+        padding: 18px 0
+        justify-content: center
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translate(-50%, -50%)
+        &__title
+            font-family: 'Montserrat', sans-serif
+            font-style: normal
+            font-weight: 800
+            font-size: 50px
+            line-height: 100%
+            color: #1EBB92
+            margin-right: 20px
+        &__text
+            font-family: 'Montserrat', sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 110%
+            max-width: 140px
+        &__box
+            margin-right: 50px
+            &:last-of-type
+                margin-right: 0

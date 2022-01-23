@@ -1,0 +1,89 @@
+.quiz
+    padding: 0
+    margin-bottom: 150px
+    &__button-group
+        width: 650px
+        display: flex
+        justify-content: space-between
+    &__button
+        width: 315px
+        font-size: 18px
+    &__dots
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        left: 50%
+        top: 25px
+        transform: translateX(-50%)
+    &__dot
+        border-radius: 50%
+        width: 15px
+        height: 15px
+        background-color: #D7E2FF
+        margin-right: 10px
+        &--active
+            background-color: #1EBB92
+        &:last-of-type
+            margin-right: 0
+    &__radio
+        display: none
+        &:checked + .quiz__label__text
+            background-color: #F1F5FF
+            font-weight: 600
+    &__label
+        width: 390px
+        height: 65px
+        cursor: pointer
+        &__text
+            display: flex
+            align-items: center
+            width: 100%
+            height: 100%
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 120%
+            background: #FFFFFF
+            border: 1px solid #D7E2FF
+            border-radius: 10px
+            padding: 0px 25px
+    &__content
+        background: #FFFFFF
+        border: 1px solid #D7E2FF
+        border-radius: 6px
+        width: 100%
+        max-width: 1320px
+        height: 100%
+        margin: auto
+        padding: 62px 20px 54px
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+    &__container
+        padding: 74px 20px
+        background-color: #F1F5FF
+        height: 100vh
+        min-height: 680px
+        max-height: 850px
+    &__text
+        font-family: 'Montserrat', sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 24px
+        line-height: 120%
+        text-align: center
+        margin-bottom: 30px
+    &__title
+        margin-bottom: 50px
+    &__box
+        max-width: 800px
+        margin: auto
+        display: grid
+        grid-gap: 20px
+        grid-template-columns: repeat(auto-fill, 390px)
+        justify-content: center
+    &__wrap
+        width: 100%

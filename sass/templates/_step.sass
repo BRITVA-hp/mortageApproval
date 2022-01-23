@@ -1,0 +1,61 @@
+.step
+    margin-bottom: 150px
+    padding: 0
+    position: relative
+    &__dots
+        position: absolute
+        top: -100px
+        right: 0
+    &__container
+        background-color: #F1F5FF
+        background-image: url(../img/step/img.png)
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
+        padding: 110px
+        position: relative
+        &__dots
+            position: absolute
+            top: 0
+            right: 15%
+    &__title
+        text-align: left
+        margin-bottom: 80px
+    &__row
+        justify-content: flex-start
+    &__card
+        width: 100%
+        max-width: 300px
+        height: 340px
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-left: 50px
+        margin-right: 20px
+        &:last-of-type
+            margin-right: 0
+        &--1
+            background-image: url(../img/step/bg1.png)
+        &--2
+            background-image: url(../img/step/bg2.png)
+        &--3
+            background-image: url(../img/step/bg3.png)
+        &__title
+            font-family: 'Montserrat', sans-serif
+            font-style: normal
+            font-weight: 800
+            font-size: 19px
+            line-height: 130%
+            margin-bottom: 5px
+        &__ul
+            font-style: normal
+            font-weight: normal
+            font-size: 17px
+            line-height: 130%
+            max-width: 220px
+            transform: translateX(20px)
+            &--1
+                max-width: 175px

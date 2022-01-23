@@ -1,0 +1,58 @@
+.we
+    margin-bottom: 150px
+    position: relative
+    &__dots
+        position: absolute
+        left: 0
+        top: 55px
+    &__card
+        position: relative
+        z-index: 2
+        width: 580px
+        height: 480px
+        &__content
+            width: 100%
+            background: #FFFFFF
+            height: 100%
+            border-radius: 10px
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 140%
+            padding: 70px 60px 0
+        &::after
+            content: ''
+            position: absolute
+            width: 594px
+            height: 453px
+            background: linear-gradient(180deg, #FFFFFF 41.92%, rgba(255, 255, 255, 0.74) 177.68%)
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+            border-radius: 10px
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            z-index: -1
+        &__img
+            position: absolute
+            left: 36px
+            top: -45px
+            &--mob
+                display: none
+                top: -24px
+                left: 50%
+                transform: translateX(-50%)
+    &__row
+        justify-content: flex-end
+        position: relative
+    &__img
+        position: absolute
+        left: 0
+        top: -45px
+        z-index: 1
+        &--mob
+            display: none
+    &__container
+        max-width: 1211px
+    &__title
+        margin-bottom: 145px
